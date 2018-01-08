@@ -1,0 +1,29 @@
+
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+
+    
+            <div class="panel panel-primary">
+                 <div class="panel-heading">
+                    <h3 class="panel-title">Select a Notification</h3>
+                </div>
+{% for notification in notifications %}            
+                <div class="panel-body">                
+                    <div class="row">
+                          <span class="col-md-1 col-xs-1"> </span>
+                          <a href="#!" onclick='callService("/say/?text=Message from {{username}}!  {{notification["notification"]}}")' class="col-md-10 col-xs-10 btn btn-primary btn-lg" role="button"><span class="glyphicon glyphicon-bullhorn"></span> <br/>{{notification["notification"]}}</a>
+                          <span class="col-md-1 col-xs-1"> </span>
+                    </div>                   
+                </div>
+{% endfor %}
+            </div>
+    
+
+        </div>
+    </div>
+</div>
+{% endblock %}

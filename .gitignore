@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log
+config.py
+static/*.mp3
+data/*.db
+data/*.sql
+sql/*.sql
+scripts/*.sh
+scripts/*.*
+__pycache__/*
+
+

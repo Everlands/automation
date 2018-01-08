@@ -1,0 +1,80 @@
+
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                
+                <div class="panel-heading">
+                    <h3 class="panel-title">TV Remote</h3>
+                </div>
+                
+                <div class="panel-body">
+                    <div class="row">
+                          <span class="col-md-1 col-xs-1"> </span>
+                          <a href="#!" onclick='callService("/telly/?command=VOLUMEUP")' class="col-md-4 col-xs-4 btn btn-success btn-lg" role="button" >
+                              <span class="glyphicon glyphicon-volume-up"></span></a>
+                          <span class="col-md-2 col-xs-2"> </span>
+                          <a href="#!" onclick='callService("/telly/?command=CHANNELUP")' class="col-md-4 col-xs-4 btn btn-success btn-lg" role="button">
+                              <span class="glyphicon glyphicon-plus-sign"></span></a>
+                          <span class="col-md-1 col-xs-1"> </span>
+                    </div>
+
+</br>
+
+                     <div class="row">
+                          <span class="col-md-1 col-xs-1"> </span>
+                          <a href="#!" onclick='callService("/telly/?command=VOLUMEDOWN")' class="col-md-4 col-xs-4 btn btn-danger btn-lg" role="button" ><span class="glyphicon glyphicon-volume-down"></span></a>
+                          <span class="col-md-2 col-xs-2"> </span>
+                          <a href="#!" onclick='callService("/telly/?command=CHANNELDOWN")' class="col-md-4 col-xs-4 btn btn-danger btn-lg" role="button"><span class="glyphicon glyphicon-minus-sign"></span></a>
+                          <span class="col-md-1 col-xs-1"> </span>
+                    </div>
+<br/>
+
+                     <div class="row">
+                          <span class="col-md-1 col-xs-1"> </span>
+                          <a href="#!" onclick='callService("/telly/?command=GUIDE")' class="col-md-4 col-xs-4 btn btn-info btn-lg" role="button" ><span class="glyphicon glyphicon-list"></span></a>
+                          <span class="col-md-2 col-xs-2"> </span>
+                          <a href="#!" onclick='callService("/telly/?command=INFO")' class="col-md-4 col-xs-4 btn btn-info btn-lg" role="button"><span class="glyphicon glyphicon-info-sign"></span></a>
+                          <span class="col-md-1 col-xs-1"> </span>
+                    </div>
+<br/>
+                    <div class="row">
+                          <span class="col-md-2 col-xs-2"> </span>
+                          <span class="col-md-2 col-xs-2"> </span>
+                          <span class="col-md-1 col-xs-1"> </span>
+                          <a href="#!" onclick='callService("/telly/?command=UP")' class="col-md-2 col-xs-2 btn btn-info btn-lg" role="button" ><span class="glyphicon glyphicon-arrow-up"></span></a>
+                          <span class="col-md-1 col-xs-1"> </span>                          
+                          <span class="col-md-2 col-xs-2"> </span>
+                          <span class="col-md-2 col-xs-2"> </span>
+                    </div>
+<br/>
+                    <div class="row">
+                          <span class="col-md-2 col-xs-2"> </span>
+                          <a href="#!" onclick='callService("/telly/?command=LEFT")' class="col-md-2 col-xs-2 btn btn-info btn-lg" role="button" ><span class="glyphicon glyphicon-arrow-left"></span></a>                     
+                          <span class="col-md-1 col-xs-1"> </span>
+                          <a href="#!" onclick='callService("/telly/?command=ENTER")' class="col-md-2 col-xs-2 btn btn-info btn-lg" role="button" ><span class="glyphicon glyphicon-ok-sign"></span></a>
+                          <span class="col-md-1 col-xs-1"> </span>
+                          <a href="#!" onclick='callService("/telly/?command=RIGHT")' class="col-md-2 col-xs-2 btn btn-info btn-lg" role="button" ><span class="glyphicon glyphicon-arrow-right"></span></a>
+                          <span class="col-md-2 col-xs-2"> </span>                          
+                    </div>
+<br />                    
+                    <div class="row">
+                          <span class="col-md-2 col-xs-2"> </span>
+                          <span class="col-md-2 col-xs-2"> </span>
+                          <span class="col-md-1 col-xs-1"> </span>
+                          <a href="#!" onclick='callService("/telly/?command=DOWN")' class="col-md-2 col-xs-2 btn btn-info btn-lg" role="button" ><span class="glyphicon glyphicon-arrow-down"></span></a>
+                          <span class="col-md-1 col-xs-1"> </span>                          
+                          <span class="col-md-2 col-xs-2"> </span>
+                          <span class="col-md-2 col-xs-2"> </span>
+                    </div>
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

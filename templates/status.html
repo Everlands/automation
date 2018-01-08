@@ -1,0 +1,30 @@
+
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+
+    
+            <div class="panel panel-primary">
+                 <div class="panel-heading">
+                    <h3 class="panel-title">Actions Performed</h3>
+                </div>
+                <div class="panel-body">
+{% for action in log %}
+                
+                    <div class="row">
+                          <span class="col-md-3 col-xs-3">{{action["user"].split("@")[0].capitalize()}}</span>
+                          <span class="col-md-6 col-xs-9">{{action["action"]}}</span>
+                          <span class="col-md-3 hidden-xs">{{action["time"]}}</span>
+                    </div>                   
+{% endfor %}
+                </div>
+            </div>
+    
+
+        </div>
+    </div>
+</div>
+{% endblock %}
