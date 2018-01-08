@@ -1,10 +1,22 @@
+
 {% extends "layout.html" %}
 {% block content %}
 <div name="home" class="container elhome">
     <div class="row">
-        <div class="col-md-12 col-xs-12">
-            <a href="/power/"><img src="/static/img/everlands.jpg" alt="Everlands Logo" class="img-responsive" /></a>
-	</div>
+        <div class="col-md-12 col-xs-12">            
+            <a href="/power/"><span class="col-md-3 col-xs-12 button-wrapper"><button class="btn btn-secondary btn-block">
+                <span class="fa fa-lightbulb-o fa-5x"> </span>
+            </button></span></a>
+            <a href="/tvremote/"><span class="col-md-3 col-xs-12 button-wrapper"><button class="btn btn-secondary btn-block">
+                <span class="fa fa-television fa-5x"> </span>
+            </button></span></a>
+            <a href="/camera/"><span class="col-md-3 col-xs-12 button-wrapper"><button class="btn btn-secondary btn-block">
+                <span class="fa fa-video-camera fa-5x"> </span>
+            </button></span></a>
+            <a href="/notify/"> <span class="col-md-3 col-xs-12 button-wrapper"><button class="btn btn-secondary btn-block">
+                <span class="fa fa-bullhorn fa-5x"> </span>
+            </button></span></a>
+    	</div>
     </div>
 </div>
 

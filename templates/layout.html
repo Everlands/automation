@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
  <head>
     <title>Everlands Home Automation</title>    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/static/css/main.css">
     <script src="/static/js/automation.js"></script>    
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -22,21 +24,21 @@
     <div class="collapse navbar-collapse" id="myNavbar">
     {% if thisuser.id %}
     <ul class="nav navbar-nav">
-      <li {% if request.path == '/' %}class="active"{% endif %}><a href="{{ url_for('home') }}"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-      <li {% if request.path == '/power/' %}class="active"{% endif %}><a href="{{ url_for('power') }}"><span class="glyphicon glyphicon-flash"></span> Power</a></li>
-      <li {% if request.path == '/tvremote/' %}class="active"{% endif %}><a href="{{ url_for('tvremote') }}"><span class="glyphicon glyphicon-th"></span> TV remote</a></li>
-      <li {% if request.path == '/camera/' %}class="active"{% endif %}><a href="{{ url_for('camera') }}"><span class="glyphicon glyphicon-camera"></span> Camera</a></li>
-      <li {% if request.path == '/notify/' %}class="active"{% endif %}><a href="{{ url_for('notifications') }}"><span class="glyphicon glyphicon-bullhorn"></span> Notify</a></li>
-      <li {% if request.path == '/status/' %}class="active"{% endif %}><a href="{{ url_for('status') }}"><span class="glyphicon glyphicon-list"></span> Status</a></li>
+      <li {% if request.path == '/' %}class="active"{% endif %}><a href="{{ url_for('home') }}"><span class="fa fa-home"></span> Home</a></li>
+      <li {% if request.path == '/power/' %}class="active"{% endif %}><a href="{{ url_for('power') }}"><span class="fa fa-lightbulb-o"></span> Power</a></li>
+      <li {% if request.path == '/tvremote/' %}class="active"{% endif %}><a href="{{ url_for('tvremote') }}"><span class="fa fa-television"></span> TV remote</a></li>
+      <li {% if request.path == '/camera/' %}class="active"{% endif %}><a href="{{ url_for('camera') }}"><span class="fa fa-video-camera"></span> Camera</a></li>
+      <li {% if request.path == '/notify/' %}class="active"{% endif %}><a href="{{ url_for('notifications') }}"><span class="fa fa-bullhorn"></span> Notify</a></li>
+      <li {% if request.path == '/status/' %}class="active"{% endif %}><a href="{{ url_for('status') }}"><span class="fa fa-list"></span> Status</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="/logout/"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+      <li><a href="/logout/"><span class="fa fa-sign-out"></span> Logout</a></li>
     </ul>
     {% endif %}
     {% if not thisuser.id %}
     
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="/login/"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="/login/"><span class="fa fa-sign-in"></span> Login</a></li>
     </ul>
     
     {% endif %}
